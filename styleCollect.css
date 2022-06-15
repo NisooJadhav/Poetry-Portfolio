@@ -1,0 +1,150 @@
+html {
+    background-image: url('./images/back.jpg');
+}
+
+.welcome {
+    animation: fadeIn ease 7s;
+}
+  
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    50% {opacity: 1;}
+    100% {opacity: 1;}
+}
+
+.NameDiv {
+    font-family: 'Parisienne';
+    font-size: 80px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding-top: 55px;
+    padding-bottom: 20px;
+}
+
+#authorName {
+    font-family: 'Parisienne';
+    font-size: 60px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 0px;
+    cursor: pointer;
+}
+
+
+
+/* navigation */
+
+
+ul {
+    list-style: none;
+    text-align:center; 
+    margin:0; 
+    padding:0px; 
+    display:block; 
+    overflow:hidden; 
+    margin-top: 25px;
+}
+
+
+li { 
+    color: rgb(255, 255, 255);
+    display:inline-block; 
+    font-size: 40px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding-top: 5px;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 50px;
+}
+
+#firstLI {
+    padding-left: 50px;
+}
+
+#lastLI {
+    padding-right: 50px;
+}
+
+
+li a {
+    cursor: pointer;
+}
+
+li a:hover{
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+a:hover {
+    color: rgb(253, 253, 213);
+}
+
+
+
+
+
+/*FLIP CARD CSS*/
+.flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 300px;
+    perspective: 1000px;
+    margin-top: 47.2px;
+    margin-left: 47.2px;
+    margin-right: 20px;
+    margin-bottom: 47.2px;
+    float: left;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+
+.flip-card-front {
+    background-color: #bbb;
+    color: black;
+}
+
+.flip-card-back {
+    /*background-image: url('C:/Users/Anjali/Desktop/Anjali/Projects/WebDev/Poetry collection/back/my-eyes-meet.jpg');*/
+    background-size: cover;
+    color: white;
+    transform: rotateY(180deg);
+}
+
+
+
+/* scrolling effect */
+div.scroll {
+    margin: 4px, 4px;
+    padding: 4px;
+    background-color: transparent;
+    width: auto;
+    height: 350px;
+    overflow: auto;
+    white-space: nowrap;
+}
