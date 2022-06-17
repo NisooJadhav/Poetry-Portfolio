@@ -158,6 +158,7 @@ li a:hover{
     padding: 2px 0; 
     width: 800px;
     margin: 20px auto;
+    text-shadow: 1px 1px 1px #000;
 }
 
 #authorName {
