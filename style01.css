@@ -1,5 +1,15 @@
-html {
+html{
+	padding:0;
+	margin:0;
+}
+
+body {
     background-image: url('./images/back.jpg');
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-color:#00000099;
+    background-blend-mode: lighten;
+    background-attachment: fixed;
 }
 
 .welcome {
@@ -88,12 +98,6 @@ a:hover {
     cursor: pointer;
 }
 
-
-
-
-
-
-
 .nav-ul {
     list-style: none;
     text-align:center; 
@@ -102,7 +106,6 @@ a:hover {
     display:block; 
     overflow:hidden; 
 }
-
 
 li { 
     color: rgb(255, 255, 255);
@@ -123,7 +126,6 @@ li {
     padding-right: 50px;
 }
 
-
 li a {
     cursor: pointer;
 }
@@ -131,13 +133,6 @@ li a {
 li a:hover{
     cursor: pointer;
 }
-
-
-
-
-
-
-
 
 /* author page */
 
@@ -174,8 +169,6 @@ li a:hover{
     padding-bottom: 0px;
     cursor: pointer;
 }
-
-
 
 /* contact page */
 .contact {
