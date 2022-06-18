@@ -1,24 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>Anjali's Poetry Portfolio</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="./style01.css" />
-        <link href='https://fonts.googleapis.com/css?family=Parisienne' rel='stylesheet'>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    </head>
+<head>
+    <title>Anjali's Poetry Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon"
+        href="https://static.vecteezy.com/system/resources/previews/000/552/374/large_2x/autumn-maple-leaf-vector-logo.jpg"
+        type="image/x-icon">
+    <link rel="stylesheet" href="./style01.css" />
+    <link href='https://fonts.googleapis.com/css?family=Parisienne' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://api.fontshare.com/v2/css?f[]=satoshi@400&display=swap" rel="stylesheet">
+</head>
 
+<body class="index">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
-    <body class="index" >
+    <div class="main">
+        <!-- navigation toolbar -->
+        <nav class="nav">
+            <h1 class="brand">Anjali Patel</h1>
+            <ul class="nav-ul">
+                <li id="firstLI">
+                    <a href="./menu.html">Home</a>
+                </li>
+                <li>
+                    <a href="./author.html">Author</a>
+                </li>
+                <li>
+                    <a href="./collection.html">Collection</a>
+                </li>
+                <li id="lastLI">
+                    <a href="./contact.html">Contact</a>
+                </li>
+            </ul>
+        </nav>
+
         <!-- initial welcome page -->
         <div class="welcome">
 
-
             <!-- welcome message -->
             <div class="NameDiv">
-                <section id="authorName">
-                        << Reach out to me... >>
+                <section id="authorName" style="padding-top: 0px;">
+                    Reach out to me...
                 </section>
             </div>
 
@@ -28,19 +52,21 @@
                 <ul class="contact">
                     <li>
                         <i class="fa fa-envelope" style="font-size:48px;color:rgb(255, 255, 255)"></i>
-                        <a href="mailto:mapleink2020@gmail.com" target="_blank"> <span>mapleink2020@gmail.com</span> </a>
-                    </li> 
-                        <br>
+                        <a href="mapleink2020@gmail.com" target="_blank"> <span>mapleink2020@gmail.com</span> </a>
+                    </li>
+                    <br>
                     <li>
                         <i class="fa fa-instagram" style="font-size:48px;color:white"></i>
-                        <a href="https://www.instagram.com/maple__ink/" target="_blank"> <span>@Maple__Ink</span> </a>
+                        <a href="https://www.instagram.com/maple__ink/" target="_blank">
+                            <span>@maple__ink</span> </a>
                     </li>
-                        <br>
+                    <br>
                     <li>
                         <i class="fa fa-linkedin-square" style="font-size:48px;color:white"></i>
-                        <a href="https://www.linkedin.com/in/anjali-patel-3966b41a1/" target="_blank"> <span>Anjali Patel</span> </a>
+                        <a href="https://www.linkedin.com/in/anjali-patel-3966b41a1/" target="_blank"> <span>Anjali
+                                Patel</span> </a>
                     </li>
-                        <br>
+                    <br>
                     <!-- <li>
                         <i class="fa fa-github" style="font-size:48px;color:white"></i>
                         <a href="https://github.com/theanjali-2002"> <span>theanjali-2002</span> </a>
@@ -48,29 +74,34 @@
                         <br> -->
                 </ul>
             </div>
-
-
-
-            <!-- navigation toolbar -->
-            <nav class="nav">
-                <ul class="nav-ul">
-                    <li id="firstLI">
-                        <a href="./menu.html">Home</a>
-                    </li>
-                    <li>
-                        <a href="./author.html">Author</a>
-                    </li>
-                    <li>
-                        <a href="./collection.html">Collection</a>
-                    </li>
-                    <li id="lastLI">
-                        <a href="./contact.html">Contact</a>
-                    </li>
-                </ul>
-            </nav>
-
         </div>
+    </div>
+
+    <!-- for gradient -->
+    <div class="gradient"></div>
+
+    <script>
+        const bgImg = [
+            'https://images.unsplash.com/photo-1567095751004-aa51a2690368?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80',
+            'https://images.unsplash.com/photo-1608501821300-4f99e58bba77?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80',
+            'https://images.unsplash.com/photo-1526289034009-0240ddb68ce3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80',
+            'https://images.unsplash.com/photo-1552152974-19b9caf99137?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80',
+            'https://images.unsplash.com/photo-1448067686092-1f4f2070baae?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80',
+            'https://images.unsplash.com/photo-1499428665502-503f6c608263?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80',
+            'https://images.unsplash.com/photo-1446729444801-31245ddba81a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80',
+            'https://images.unsplash.com/photo-1521489871110-81dc5a61dbda?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1228&q=80',
+            'https://images.unsplash.com/photo-1636047152186-7bd1d7a8a6ab?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1332&q=80',
+            'https://images.unsplash.com/photo-1504672281656-e4981d70414b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80'
+        ];
 
 
-    </body>
+        function bgSwitch(array) {
+            const randomRng =
+                Math.floor(Math.random() * (array.length - 1 - 0 + 1)) + 0;
+            let current = bgImg[randomRng];
+            document.body.style.cssText = `background-image: url(${current})`;
+        }
+        bgSwitch(bgImg);
+    </script>
+</body>
 </html>
