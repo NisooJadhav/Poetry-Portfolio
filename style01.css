@@ -1,29 +1,55 @@
-html{
-	padding:0;
-	margin:0;
+html {
+    padding: 0;
+    margin: 0;
 }
 
 body {
     background-image: url('./images/back.jpg');
-    background-repeat:no-repeat;
+    background-repeat: no-repeat;
     background-size: cover;
-    background-color:#00000099;
     background-blend-mode: lighten;
     background-attachment: fixed;
 }
 
-.welcome {
-    animation: fadeIn ease 7s;
+.main {
+    z-index: 2;
+    position: relative;
 }
-  
+
+/* for gradient */
+.gradient {
+    position: absolute;
+    background-color: #00000099;
+    opacity: 0.8;
+    height: 100vh;
+    width: 100vw;
+    padding: 0;
+    margin: 0;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.welcome {
+    animation: fadeIn ease 4s;
+}
+
 @keyframes fadeIn {
-    0% {opacity: 0;}
-    50% {opacity: 1;}
-    100% {opacity: 1;}
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
 
 #welcomeQuote {
-    font-family: 'Parisienne';
+    font-family: 'Parisienne' !important;
     font-size: 85px;
     color: rgb(255, 255, 255);
     text-align: center;
@@ -32,13 +58,30 @@ body {
     cursor: pointer;
 }
 
-a {
+.nav-ul a {
     text-decoration: none;
     color: rgb(255, 255, 255);
+    opacity: 0.6;
+    font-family: 'satoshi';
+}
+
+.contact a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    opacity: 0.6;
+    font-family: 'satoshi';
 }
 
 a:hover {
-    color: rgb(253, 253, 213);
+    color: #fff;
+    opacity: 1;
+    text-shadow: 1px 1px 2px #000;
+}
+
+.author-contact {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-family: 'satoshi';
 }
 
 #circle {
@@ -50,7 +93,6 @@ a:hover {
     display: block;
     margin-left: auto;
     margin-right: auto;
-
 }
 
 #menu-img {
@@ -62,22 +104,31 @@ a:hover {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    opacity: 0.5;
 }
 
-
-
-
+#menu-img:hover {
+    opacity: 1;
+}
 
 /* menu - next page here */
 
 .homeBox {
     animation: fadeInmenu ease 7s;
 }
-  
+
 @keyframes fadeInmenu {
-    0% {opacity: 0;}
-    50% {opacity: 1;}
-    100% {opacity: 1;}
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
 
 .quoteDiv {
@@ -98,24 +149,41 @@ a:hover {
     cursor: pointer;
 }
 
-.nav-ul {
-    list-style: none;
-    text-align:center; 
-    margin:0; 
-    padding:0px; 
-    display:block; 
-    overflow:hidden; 
+.nav {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
 
-li { 
+.brand {
+    font-family: 'Parisienne';
+    color: #fff;
+    font-size: 50px;
+    margin-right: 100px;
+    text-shadow: #000;
+}
+
+.nav-ul {
+    list-style: none;
+    text-align: center;
+    margin: 0;
+    padding: 0px;
+    display: block;
+    overflow: hidden;
+    margin-top: 30px;
+}
+
+li {
     color: rgb(255, 255, 255);
-    display:inline-block; 
-    font-size: 40px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    display: inline-block;
+    font-size: 35px;
+    font-family: 'satoshi';
     padding-top: 5px;
-    padding-left: 100px;
-    padding-right: 100px;
+    padding-left: 30px;
+    padding-right: 30px;
     padding-bottom: 50px;
+    text-shadow: 1px 1px 1px #000;
 }
 
 #firstLI {
@@ -130,7 +198,7 @@ li a {
     cursor: pointer;
 }
 
-li a:hover{
+li a:hover {
     cursor: pointer;
 }
 
@@ -155,10 +223,11 @@ li a:hover{
 
 .bio {
     line-height: 1.3;
-    padding: 2px 0; 
+    padding: 2px 0;
     width: 800px;
     margin: 20px auto;
     text-shadow: 1px 1px 1px #000;
+    font-family: 'satoshi';
 }
 
 #authorName {
@@ -169,6 +238,7 @@ li a:hover{
     padding-top: 50px;
     padding-bottom: 0px;
     cursor: pointer;
+    text-shadow: 1px 1px 2px #000000;
 }
 
 /* contact page */
