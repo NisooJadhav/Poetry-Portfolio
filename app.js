@@ -42,9 +42,6 @@ const bgImg = [
     //b&w forest
     'https://images.pexels.com/photos/1529881/pexels-photo-1529881.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
 
-    //road
-    'https://images.pexels.com/photos/416920/pexels-photo-416920.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-
     //mountains
     'https://images.pexels.com/photos/5459512/pexels-photo-5459512.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
 
