@@ -168,7 +168,7 @@ a:hover {
     color: #fff;
     font-size: 50px;
     margin-right: 100px;
-    text-shadow: #000;
+    text-shadow: 2px 2px 2px #000;
 }
 
 .nav-ul {
