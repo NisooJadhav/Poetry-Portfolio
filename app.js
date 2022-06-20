@@ -33,9 +33,6 @@ const bgImg = [
     //eye
     'https://cdn.pixabay.com/photo/2018/03/13/02/43/eye-3221498_960_720.jpg',
 
-    //old lamp
-    'https://images.pexels.com/photos/1055613/pexels-photo-1055613.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-
     //black mountain
     'https://images.pexels.com/photos/991422/pexels-photo-991422.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
 
