@@ -380,12 +380,13 @@ li a:hover {
 
     .nav-ul {
         margin-top: 0;
-        height: 80px;
+        height: 90px;
     }
 
     .nav-ul li {
-        margin-right: 30px;
+        margin-right: 10px;
         font-size: 25px;
+        margin-left: 10px;
     }
 
     li {
