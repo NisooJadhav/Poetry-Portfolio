@@ -10,20 +10,26 @@
     <link rel="stylesheet" href="./styles.css">
     <link href='https://fonts.googleapis.com/css?family=Parisienne' rel='stylesheet'>
     <link href="https://api.fontshare.com/v2/css?f[]=satoshi@400&display=swap" rel="stylesheet">
+
+    <style>
+        @media screen and (max-width:700px) {
+            .gradient {
+                height: 380%;
+            }
+        }
+    </style>
 </head>
 
 <body class="index">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
     <div class="main">
-        <!-- for gradient -->
-        <div class="gradient"></div>
-
         <div class="collectNav">
-
             <!-- navigation toolbar -->
             <nav class="nav">
-                <h1 class="brand">Maple Ink</h1>
+                <a href="https://www.instagram.com/maple__ink/">
+                    <h1 class="brand" style="color:white ;">Maple Ink</h1>
+                </a>
+
                 <ul class="nav-ul">
                     <li id="firstLI">
                         <a href="./menu.html">Home</a>
@@ -45,14 +51,14 @@
         <div class="welcome">
             <!-- welcome message -->
             <div class="NameDiv">
-                <section id="authorName" style="padding-top: 0px;">
+                <section id="authorName" style="margin-top: 50px;">
                     Hover over the cards to read!
                 </section>
             </div>
         </div>
 
         <center>
-            <div class="scroll">
+            <div class="scroll" style="margin-left:100px ;">
                 <div class="all-cards">
                     <!-- 01 -->
                     <div class="flip-card">
@@ -147,6 +153,10 @@
         <br><br>
     </div>
 
+    <!-- for gradient -->
+    <div class="gradient"></div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="app.js"></script>
 </body>
 
