@@ -1,6 +1,4 @@
 html {
-    padding: 0;
-    margin: 0;
     scroll-behavior: smooth;
 }
 
@@ -8,7 +6,6 @@ body {
     background-image: url('./images/back.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    background-blend-mode: lighten;
     background-attachment: fixed;
     margin: 0;
     padding: 0;
@@ -19,13 +16,27 @@ body {
     position: relative;
 }
 
+.nav {
+    width: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    align-content: center;
+    flex-wrap: wrap;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 6;
+}
+
 /* GRADIENT */
 .gradient {
     position: absolute;
-    background-color: #000000;
+    background-color: #00000090;
     background-repeat: no-repeat;
     background-size: cover;
-    opacity: 0.6;
     height: 100%;
     width: 100%;
     padding: 0;
@@ -75,6 +86,10 @@ a {
     text-decoration: none;
 }
 
+.nav-ul {
+    margin-top: 33px;
+}
+
 .nav-ul a {
     text-decoration: none;
     color: rgb(255, 255, 255);
@@ -85,7 +100,6 @@ a {
 .contact a {
     text-decoration: none;
     color: rgb(255, 255, 255);
-    opacity: 0.6;
     font-family: 'satoshi';
 }
 
@@ -174,28 +188,23 @@ a {
     text-shadow: 1px 2px 2px #000;
 }
 
-.nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-}
-
 .brand {
+    text-decoration: none;
     font-family: 'Parisienne';
     color: #fff;
     font-size: 40px;
-    margin-right: 100px;
+    margin-right: 4rem;
     text-shadow: 2px 2px 2px #000;
 }
 
 .nav-ul {
-    list-style: none;
+    list-style-type: none;
     text-align: center;
     margin: 0;
     padding: 0px;
     display: block;
     overflow: hidden;
-    margin-top: 30px;
+    margin-top: 10px;
 }
 
 li {
@@ -211,6 +220,7 @@ li {
 }
 
 #firstLI {
+    margin-top: 33px;
     padding-left: 50px;
 }
 
@@ -232,19 +242,23 @@ li a:hover {
     padding-bottom: 15px;
 }
 
+.intro span {
+    padding-bottom: 20px;
+}
+
 .NameDiv {
     font-family: 'Parisienne';
     font-size: 80px;
     color: rgb(255, 255, 255);
     text-align: center;
-    padding-top: 20px;
+    padding-top: 0px;
     padding-bottom: 20px;
 }
 
 .bio {
     line-height: 1.3;
     padding: 2px 0;
-    width: 800px;
+    width: 75%;
     margin: 20px auto;
     text-shadow: 1px 1px 1px #000;
     font-family: 'satoshi';
@@ -255,11 +269,13 @@ li a:hover {
     font-size: 60px;
     color: rgb(255, 255, 255);
     text-align: center;
-    padding-top: 0;
-    margin-top: 0;
     padding-bottom: 0px;
     cursor: pointer;
     text-shadow: 1px 1px 2px #000000;
+}
+
+#authorName a {
+    margin-top: 30px;
 }
 
 /*COLLECTION PAGE*/
@@ -270,7 +286,7 @@ li a:hover {
     padding: 0;
     margin: 0;
     text-align: center;
-    margin-left:110px;
+    margin-left: 110px;
 }
 
 /*FLIP CARD CSS*/
@@ -326,11 +342,116 @@ li a:hover {
     z-index: 1;
 }
 
+.contact span {
+    color: #fff;
+}
+
 .contact li a {
-    text-shadow: 1px 2px 2px #000;
+    color: #fff !important;
+    text-shadow: 1px 2px 2px #00000050;
 }
 
 .contact li a:hover {
-    color: #fff;
-    opacity: 1;
+    text-shadow: 1px 3px 2px #000;
+}
+
+/*media queries*/
+@media screen and (max-width:700px) {
+    body {
+        background-image: url('./images/back.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-blend-mode: lighten;
+        background-attachment: fixed;
+        margin: 0;
+        padding: 0;
+    }
+
+    .brand {
+        margin-top: 30px;
+        margin-left: 60px;
+        font-size: 50px;
+    }
+
+    .nav {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .nav-ul {
+        margin-top: 0;
+        height: 80px;
+    }
+
+    .nav-ul li {
+        margin-right: 30px;
+        font-size: 25px;
+    }
+
+    li {
+        padding: 0;
+        margin: 0;
+    }
+
+    #firstLI {
+        padding-left: 0px;
+    }
+
+    #lastLI {
+        padding-left: 0 !important;
+        padding-right: 0px;
+    }
+
+    .bio {
+        display: flex;
+        justify-content: center;
+
+        flex-wrap: wrap;
+        word-wrap: break-word;
+    }
+
+    .welcome {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        width: 100%;
+        min-height: 50%;
+        padding-top: 0;
+        margin-top: -30px !important;
+    }
+
+    .NameDiv {
+        padding-top: 100px;
+    }
+
+    .contact {
+        padding-top: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+    }
+
+    .contact {
+        padding-left: 0;
+    }
+
+    .contact li {
+        padding-bottom: 20px;
+    }
+
+    .quoteDiv {
+        margin-top: 100px;
+    }
+
+    .scroll {
+        margin-left: 20px !important;
+    }
+
+    #authorName {
+        margin-top: 20px !important;
+    }
 }
