@@ -68,7 +68,7 @@ function bgSwitch(array) {
     const randomRng =
         Math.floor(Math.random() * (array.length - 1 - 0 + 1)) + 0;
     let current = bgImg[randomRng];
-    document.body.style.cssText = `background: linear-gradient(to bottom, #00000075, #00000075), url(${current})`;
+    document.body.style= `background: linear-gradient(to bottom, #00000075, #00000075), url(${current})`;
 }
 
 bgSwitch(bgImg);
