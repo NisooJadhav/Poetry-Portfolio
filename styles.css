@@ -3,7 +3,7 @@ html {
 }
 
 body {
-    background: linear-gradient(to bottom, #00000075, #00000075),url('./images/back.jpg');
+    background: url('./images/back.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
